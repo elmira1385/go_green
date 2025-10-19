@@ -44,7 +44,7 @@ backBtnEl.addEventListener("click",()=>{
     back()
     if(true){
         clearInterval(interval)
-        interval=setInterval(back,5000)
+        interval=setInterval(next,5000)
     }
 
 })
