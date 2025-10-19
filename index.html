@@ -7,9 +7,9 @@
     <title>go_green</title>
   </head>
   <body class="h-screen ">
-    <header class="flex items-center justify-between py-3 px-18 bg-black">
+    <header class="flex items-center justify-between py-6 px-20 bg-transparent  w-full fixed top-0 right-0 z-50">
      <h2 class="text-[34px] font-bold text-[#1dbf73] hover:text-white ">GO GREEN</h2>
-     <ul class="flex *:text-white gap-5 *:hover:text-[#1dbf73]"">
+     <ul class="flex *:text-white gap-5 *:hover:text-[#1dbf73] *:text-[14px] *:hover:transition-all">
       <li ><a href=".">HOME</a></li>
       <li><a href=".">ABOUT</a></li>
       <li><a href=".">SERVICES</a></li>
@@ -17,7 +17,7 @@
       <li><a href=".">PRICE</a></li>
       <li class="flex gap-2 items-center relative"><a href=".">DROPDOWN</a>
         <svg  fill="#000000"  width="18px" height="18px" viewBox="0 0 24 24" id="triple-down-sign" data-name="Line Color" xmlns="http://www.w3.org/2000/svg" class="icon line-color hover:fill-[#1dbf73]"><polyline id="primary-2" data-name="primary" points="5 3 12 10 19 3" style="fill: none; stroke: rgb(255,255,255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></polyline></svg>
-        <ul class="flex flex-col bg-white absolute top-10 right-0 w-48 py-4 pr-8  pl-4 gap-2 *:text-[14px] *:text-black *:hover:text-[#1dbf73]">
+        <ul class="flex flex-col show bg-white absolute top-10 right-0 w-48 py-4 pr-8  pl-4 gap-2 *:text-[14px] *:text-black *:hover:text-[#1dbf73]">
           <li>Dropdown Menu</li>
           <li>Dropdown Menu</li>
           <li>Dropdown Menu</li>
@@ -28,6 +28,66 @@
     <li><a href=".">PRICE</a></li>
      </ul>
     </header>
+      <section class="h-screen">
+        <div class="h-full relative all">
+        <div class="slides current beforeBg flex flex-col gap-8 justify-center items-center w-full h-full absolute  bg-[url(src/img/slider-1.jpg)]" >
+          <div class="flex flex-col gap-8 justify-center items-center content">
+          <p class="text-6xl text-white font-semibold z-30">Web Development</p>
+          <span class="text-lg text-white z-30 font-light px-[330px] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum ligula. Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat.</span>
+          <button class="py-3 px-8 text-5 text-white bg-[#1dbf73] font-semibold z-30 hover:text-[#1dbf73] hover:bg-white transition-all">GET STARTED</button>
+        </div>
+        </div>
+        <div class="slides beforeBg flex flex-col gap-8 justify-center items-center w-full h-full absolute  bg-[url(src/img/slider-2.jpg)]" >
+        <div class="flex flex-col gap-8 justify-center items-center content">
+          <p class="text-6xl text-white font-semibold z-30">App Development</p>
+          <span class="text-lg text-white z-30 font-light px-[330px] text-center">Maecenas vel turpis quis lorem aliquam tempus quis non mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span>
+          <button class="py-3 px-8 text-5 text-white bg-[#1dbf73] font-semibold z-30 hover:text-[#1dbf73] hover:bg-white transition-all">GET STARTED</button>
+        </div>
+        </div>
+        <div class="slides beforeBg flex flex-col gap-8 justify-center items-center w-full h-full absolute  bg-[url(src/img/slider-3.jpg)]" >
+          <div class="flex flex-col gap-8 justify-center items-center content">
+          <p class="text-6xl text-white font-semibold z-30">Game Development</p>
+          <span class="text-lg text-white z-30 font-light px-[330px] text-center">Aenean volutpat, dolor eu finibus rhoncus, elit felis vehicula nunc, ut pulvinar ex diam nec lacus. Phasellus sit amet rhoncus turpis. Aenean tincidunt auctor purus</span>
+          <button class="py-3 px-8 text-5 text-white bg-[#1dbf73] font-semibold z-30 hover:text-[#1dbf73] hover:bg-white transition-all">GET STARTED</button>
+        </div>
+        </div>
+      </div>
+      <button id="next"
+          class=" absolute bottom-80 right-5  group"
+        >
+          <svg
+            width="26px"
+            height="26px"
+            viewBox="0 0 48 48"
+            version="1"
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 48 48"
+          >
+            <polygon class="group-hover:fill-white"
+              fill="#cccac4"
+              points="17.1,5 14,8.1 29.9,24 14,39.9 17.1,43 36,24"
+            />
+          </svg>
+        </button>
+        <button id="prev"
+          class=" absolute bottom-80 left-5 group"
+        >
+          <svg
+            width="26px"
+            height="26px"
+            viewBox="0 0 48 48"
+            version="1"
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 48 48"
+          >
+            <polygon class="group-hover:fill-white"
+              fill="#cccac4"
+              points="30.9,43 34,39.9 18.1,24 34,8.1 30.9,5 12,24"
+            />
+          </svg>
+        </button>
+      </section>
+    
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
