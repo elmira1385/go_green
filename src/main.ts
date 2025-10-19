@@ -1,25 +1,34 @@
 import './style.css'
 const allSlidesEl=document.querySelectorAll(".slides")
-const prevousBtnEl=document.getElementById("prev") as HTMLButtonElement
+const mainColor=document.querySelectorAll(".main")
+const backBtnEl=document.getElementById("prev") as HTMLButtonElement
 const nextBtnEl=document.getElementById("next") as HTMLButtonElement
 let interval:number;
-//اسلایدر
+//  اسلایدر
 const next=():void=>{
     const currentEl= document.querySelector(".current")
+    const changeColorEl=document.querySelector(".changeColor")
     currentEl?.classList.remove("current")
-     if(currentEl?.nextElementSibling) {
+    changeColorEl?.classList.remove("changeColor")
+     if(currentEl?.nextElementSibling && changeColorEl?.nextElementSibling) {
         currentEl.nextElementSibling.classList.add("current")
+        changeColorEl.nextElementSibling.classList.add("changeColor")
     } else {
     allSlidesEl[0].classList.add("current")
+    mainColor[0].classList.add("changeColor")
     }
 }
-const prevous=():void=>{
+const back=():void=>{
     const currentEl= document.querySelector(".current")
+    const changeColorEl=document.querySelector(".changeColor")
     currentEl?.classList.remove("current")
-     if(currentEl?.previousElementSibling) {
+    changeColorEl?.classList.remove("changeColor")
+     if(currentEl?.previousElementSibling && changeColorEl?.previousElementSibling) {
         currentEl.previousElementSibling.classList.add("current")
+        changeColorEl.previousElementSibling.classList.add("changeColor")
     } else {
     allSlidesEl[allSlidesEl.length-1].classList.add("current")
+    mainColor[mainColor.length-1].classList.add("changeColor")
     }
 }
 
@@ -31,11 +40,11 @@ nextBtnEl.addEventListener("click",()=>{
     }
 
 })
-prevousBtnEl.addEventListener("click",()=>{
-    prevous()
+backBtnEl.addEventListener("click",()=>{
+    back()
     if(true){
         clearInterval(interval)
-        interval=setInterval(prevous,5000)
+        interval=setInterval(back,5000)
     }
 
 })
