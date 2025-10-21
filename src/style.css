@@ -44,12 +44,13 @@ body{
 }
 
 .anime1{
-  animation: animiton1 10s ease-in;
+  animation: animiton1 3s ;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animiton1 {
   0%{
-    width: 0;
+    width: 5%;
   }
   100%{
     width: 100%;
@@ -57,7 +58,8 @@ body{
 }
 
 .anime2{
-  animation: animiton2 10s ease-in;
+  animation: animiton2 3s ;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animiton2 {
@@ -69,7 +71,8 @@ body{
   }
 }
 .anime3{
-  animation: animiton3 10s ease-in;
+  animation: animiton3 3s ;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animiton3 {
@@ -81,7 +84,8 @@ body{
   }
 }
 .anime4{
-  animation: animiton4 10s ease-in;
+  animation: animiton4 3s ;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animiton4 {
@@ -91,4 +95,11 @@ body{
   100%{
     width: 70%;
   }
+}
+
+.black{
+  background-color: black;
+  height: 80px;
+  transition: all 1s;
+
 }
