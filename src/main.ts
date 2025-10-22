@@ -79,7 +79,7 @@ if(true){
 //اسکرول ها
 window.addEventListener("scroll",()=>{
 //تغییر رنگ بک گراند هدر
-if(window.pageYOffset>=200){
+if(window.pageYOffset>=100){
     changeHeadColorEl.classList.add("black")
 }else{
     changeHeadColorEl.classList.remove("black")
