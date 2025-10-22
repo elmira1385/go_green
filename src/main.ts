@@ -1,6 +1,7 @@
 import './style.css'
 const allSlidesEl=document.querySelectorAll(".slides")
 const mainColor=document.querySelectorAll(".main")
+const profilesEl=document.querySelectorAll(".profiles")
 const backBtnEl=document.getElementById("prev") as HTMLButtonElement
 const nextBtnEl=document.getElementById("next") as HTMLButtonElement
 let interval:number;
@@ -12,6 +13,8 @@ const counter1El=document.getElementById("counter1") as HTMLSpanElement
 const counter2El=document.getElementById("counter2") as HTMLSpanElement
 const counter3El=document.getElementById("counter3") as HTMLSpanElement
 const counter4El=document.getElementById("counter4") as HTMLSpanElement
+const selectBarEl=document.getElementById("selectBar") as HTMLElement
+const showSelectBarEl=document.getElementById("showSelectBar") as HTMLElement
 let count1=50
 let count2=150
 let count3=250
@@ -124,7 +127,23 @@ const startAdd4=setInterval(() => {
 }
 })
 
+//dropdown
+selectBarEl.addEventListener("mouseover",()=>{
+    showSelectBarEl.classList.toggle("show")
+})
 
-
+// Portfolio
+profilesEl.forEach((profile)=>{
+    const layers=profile.querySelector(".layer2")
+    const massage=profile.querySelector(".massage")
+    profile.addEventListener("mouseover",()=>{
+       massage?.classList.add("layer2")
+       layers?.classList.remove("layer2")
+    })
+    profile.addEventListener("mouseleave",()=>{
+       massage?.classList.remove("layer2")
+       layers?.classList.add("layer2")
+    })
+})
 
 
