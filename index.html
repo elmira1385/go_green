@@ -21,8 +21,8 @@
         <li><a href="./index.html">HOME</a></li>
         <li><a href="./about.html">ABOUT</a></li>
         <li><a href="./services.html">SERVICES</a></li>
-        <li><a href=".">PORTFOLIO</a></li>
-        <li><a href=".">PRICE</a></li>
+        <li><a href="./portfolio.html">PORTFOLIO</a></li>
+        <li><a href="./price.html">PRICE</a></li>
         <li class="flex gap-2 items-center relative">
           <a id="selectBar" href=".">DROPDOWN</a>
           <svg
@@ -51,9 +51,38 @@
             <li>Dropdown Menu</li>
           </ul>
         </li>
-        <li><a href=".">CONTACT</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
       </ul>
     </header>
+    <!-- flash -->
+    <div
+      id="flash"
+      class="flash fixed right-5 bottom-5 bg-[#1dbf73] pt-2 px-1.5 z-40 flex justify-center items-center"
+    >
+      <svg
+        fill="white"
+        width="30px"
+        height="30px"
+        viewBox="0 0 24 24"
+        id="triple-up-sign"
+        data-name="Line Color"
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon line-color"
+      >
+        >
+        <polyline
+          id="primary"
+          points="5 10 12 3 19 10"
+          style="
+            fill: none;
+            stroke: white;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2;
+          "
+        ></polyline>
+      </svg>
+    </div>
     <!-- section1 -->
     <section class="h-full">
       <div class="h-full relative all">
@@ -1119,17 +1148,18 @@
         </p>
       </div>
       <div
-        class="flex *:text-[12px] *:text-white **:not-first:bg-[#353535] *:hover:bg-[#1dbf73] justify-center *:px-[20px] *:py-[10px]"
+        class="flex *:text-[12px] *:text-white **:not-first:bg-[#353535] *:hover:bg-[#1dbf73] *:focus:hover:bg-[#1dbf73] justify-center *:px-[20px] *:py-[10px]"
       >
-        <button id="ALL" class="bg-[#1dbf73]">ALL</button>
+        <button id="ALL">ALL</button>
         <button id="WEBDESIGN">WEB DESIGN</button>
         <button id="WEBDEVELOPMENT">WEB DEVELOPMENT</button>
         <button id="APPDESIGN">APP DESIGN</button>
         <button id="APPDEVELOPMENT">APP DEVELOPMENT</button>
       </div>
       <!-- profiles -->
-      <div id="addthem"
-        class=" grid grid-cols-3 grid-rows-2 gap-8 justify-center items-center"
+      <div
+        id="addthem"
+        class="grid grid-cols-3 grid-rows-2 gap-8 justify-center items-center"
       >
         <!-- profile1 -->
         <!-- <div
