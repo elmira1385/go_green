@@ -1,4 +1,4 @@
-import './style.css'
+import '/src/style.css'
 const allSlidesEl=document.querySelectorAll(".slides")
 const mainColor=document.querySelectorAll(".main")
 const backBtnEl=document.getElementById("prev") as HTMLButtonElement

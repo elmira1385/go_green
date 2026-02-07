@@ -1,4 +1,4 @@
-import './style.css'
+import '/src/style.css'
 const changeHeadColorEl=document.getElementById("changeHeadColor") as HTMLHeadElement
 const selectBarEl=document.getElementById("selectBar") as HTMLElement
 const showSelectBarEl=document.getElementById("showSelectBar") as HTMLElement
