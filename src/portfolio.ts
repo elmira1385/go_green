@@ -29,37 +29,37 @@ const products=[
     
         title:"Lorem ipsum dolor",
         description:"WEB DESIGN",
-        image:'src/img/portfolio-1.jpg'
+        image:'/img/portfolio-1.jpg'
 
     },
     {
         title:"Nulla ullamcorper pharetra",
         description:"WEB DEVELOPMENT",
-        image:'src/img/portfolio-2.jpg'
+        image:'/img/portfolio-2.jpg'
 
     },
     {
         title:"Phasellus eget dictum",
         description:"APP DESIGN",
-        image:'src/img/portfolio-3.jpg'
+        image:'/img/portfolio-3.jpg'
 
     },
     {
         title:"Donec mattis vestibulum",
         description:"APP DEVELOPMENT",
-        image:'src/img/portfolio-4.jpg'
+        image:'/img/portfolio-4.jpg'
 
     },
     {
         title:"Pellentesque ullamcorper",
         description:"WEB DESIGN",
-        image:'src/img/portfolio-5.jpg'
+        image:'/img/portfolio-5.jpg'
 
     },
     {
         title:"Sed pretium sapien",
         description:"WEB DEVELOPMENT",
-        image:'src/img/portfolio-6.jpg'
+        image:'/img/portfolio-6.jpg'
 
     },
 ]
